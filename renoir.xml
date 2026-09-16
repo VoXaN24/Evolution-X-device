@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!--Remotes-->
+    <remote name="los"            fetch="https://github.com/LineageOS"           revision="lineage-23.2" />
+    <remote name="muppets"        fetch="https://github.com/TheMuppets"          revision="lineage-23.2" />
+
+    <!--Devices Trees-->
+    <project name="android_device_xiaomi_renoir"           path="device/xiaomi/renoir"       remote="los" />
+    <project name="android_device_xiaomi_sm8350-common"     path="device/xiaomi/sm8350-common" remote="los" />
+
+    <!--Vendors Tree-->
+    <project name="proprietary_vendor_xiaomi_renoir"       path="vendor/xiaomi/renoir"       remote="muppets" />
+    <project name="proprietary_vendor_xiaomi_sm8350-common" path="vendor/xiaomi/sm8350-common" remote="muppets" />
+
+    <!--Kernel Tree-->
+    <project name="android_kernel_xiaomi_sm8350"            path="kernel/xiaomi/sm8350"        remote="los" />
+
+    <!--Hardware dependencies-->
+    <project name="android_hardware_xiaomi"                 path="hardware/xiaomi"             remote="los" />
+</manifest>

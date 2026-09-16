@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!--Remotes-->
+    <remote name="los"            fetch="https://github.com/LineageOS"           revision="lineage-23.2" />
+    <remote name="muppets"        fetch="https://github.com/TheMuppets"          revision="lineage-23.2" />
+
+    <!--Devices Trees-->
+    <project name="android_device_xiaomi_davinci"           path="device/xiaomi/davinci"       remote="los" />
+    <project name="android_device_xiaomi_sm6150-common"     path="device/xiaomi/sm6150-common" remote="los" />
+
+    <!--Vendors Tree-->
+    <project name="proprietary_vendor_xiaomi_davinci"       path="vendor/xiaomi/davinci"       remote="muppets" />
+    <project name="proprietary_vendor_xiaomi_sm6150-common" path="vendor/xiaomi/sm6150-common" remote="muppets" />
+
+    <!--Kernel Tree-->
+    <project name="android_kernel_xiaomi_sm6150"            path="kernel/xiaomi/sm6150"        remote="los" />
+
+    <!--Hardware dependencies-->
+    <project name="android_hardware_xiaomi"                 path="hardware/xiaomi"             remote="los" />
+</manifest>
