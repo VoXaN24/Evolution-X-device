@@ -3,6 +3,7 @@
     <!--Remotes-->
     <remote name="los"            fetch="https://github.com/LineageOS"           revision="lineage-23.2" />
     <remote name="muppets"        fetch="https://github.com/TheMuppets"          revision="lineage-23.2" />
+    <remote name="voxan"          fetch="https://github.com/VoXaN24"             revision="bka-davinci" />
 
     <!--Devices Trees-->
     <project name="android_device_xiaomi_davinci"           path="device/xiaomi/davinci"       remote="los" />
@@ -17,4 +18,7 @@
 
     <!--Hardware dependencies-->
     <project name="android_hardware_xiaomi"                 path="hardware/xiaomi"             remote="los" />
+
+    <!-- Updater-->
+    <project name="packages_apps_Updater"                   path="packages_apps_Updater"        remote="voxan" />
 </manifest>
